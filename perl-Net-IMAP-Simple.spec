@@ -1,6 +1,6 @@
 %define module	Net-IMAP-Simple
 %define name	perl-%{module}
-%define version 1.16
+%define version 1.17
 %define release %mkrel 1
 
 Name:		%{name}
@@ -10,10 +10,7 @@ Summary:	Simple IMAP interface to Perl 5
 License:	GPL
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
-Source:		http://www.cpan.org/modules/by-module/Net/%{module}-%{version}.tar.bz2
-%if %{mdkversion} < 1010
-Buildrequires:	perl-devel
-%endif
+Source:		http://www.cpan.org/modules/by-module/Net/%{module}-%{version}.tar.gz
 BuildArch:	noarch
 Buildroot:	%{_tmppath}/%{name}-%{version}
 
