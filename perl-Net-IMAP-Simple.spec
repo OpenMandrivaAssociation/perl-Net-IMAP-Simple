@@ -12,6 +12,7 @@ Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
 Source:		http://www.cpan.org/modules/by-module/Net/%{module}-%{version}.tar.gz
 BuildArch:	noarch
+Buildroot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Perl extension for simple IMAP account handling, 
