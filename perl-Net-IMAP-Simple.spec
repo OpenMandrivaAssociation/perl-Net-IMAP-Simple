@@ -1,25 +1,25 @@
-%define module	Net-IMAP-Simple
-%define name	perl-%{module}
-%define version 1.17
-%define release %mkrel 4
+%define upstream_name	 Net-IMAP-Simple
+%define upstream_version 1.1801
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		perl%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
+Release:	%mkrel 1
+
 Summary:	Simple IMAP interface to Perl 5	
 License:	GPL
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{module}
-Source:		http://www.cpan.org/modules/by-module/Net/%{module}-%{version}.tar.gz
-BuildArch:	noarch
-Buildroot:	%{_tmppath}/%{name}-%{version}
+URL:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
+
+BuildArch: noarch
+Buildroot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Perl extension for simple IMAP account handling, 
 mostly compatible with Net::POP.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor 
