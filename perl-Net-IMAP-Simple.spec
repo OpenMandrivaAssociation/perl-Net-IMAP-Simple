@@ -1,7 +1,7 @@
 %define upstream_name	 Net-IMAP-Simple
 %define upstream_version 1.1801
 
-Name:		perl%{upstream_name}
+Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
 Release:	%mkrel 1
 
