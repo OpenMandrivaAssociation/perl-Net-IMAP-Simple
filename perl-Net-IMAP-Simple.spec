@@ -1,5 +1,5 @@
 %define upstream_name	 Net-IMAP-Simple
-%define upstream_version 1.1905
+%define upstream_version 1.1907
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -42,4 +42,3 @@ rm -rf %{buildroot}
 %doc Changes README
 %{_mandir}/man3/*
 %{perl_vendorlib}/Net
-
