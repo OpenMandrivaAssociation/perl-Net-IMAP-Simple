@@ -1,5 +1,5 @@
 %define upstream_name	 Net-IMAP-Simple
-%define upstream_version 1.1912
+%define upstream_version 1.2000
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -12,7 +12,9 @@ URL:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Class::Accessor)
+BuildRequires: perl(Parse::RecDescent)
 BuildRequires: perl(Regexp::Common)
+
 BuildArch: noarch
 Buildroot: %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -24,11 +26,11 @@ mostly compatible with Net::POP.
 %setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor 
+yes | %{__perl} Makefile.PL INSTALLDIRS=vendor 
 %make
 
 %check
-%{__make} test
+%make test
 
 %install
 rm -rf %{buildroot} 
