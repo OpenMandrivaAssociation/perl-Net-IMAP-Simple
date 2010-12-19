@@ -12,6 +12,7 @@ URL:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Class::Accessor)
+BuildRequires: perl(DateTime)
 BuildRequires: perl(Parse::RecDescent)
 BuildRequires: perl(Regexp::Common)
 BuildRequires: perl(Email::Address)
