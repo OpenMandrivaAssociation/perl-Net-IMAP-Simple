@@ -14,6 +14,7 @@ Source0:	http://www.cpan.org/modules/by-module/Net/%{upstream_name}-%{upstream_v
 BuildRequires: perl(Class::Accessor)
 BuildRequires: perl(DateTime)
 BuildRequires: perl(DateTime::Format::Strptime)
+BuildRequires: perl(DateTime::Format::Mail)
 BuildRequires: perl(Parse::RecDescent)
 BuildRequires: perl(Regexp::Common)
 BuildRequires: perl(Email::Address)
