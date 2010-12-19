@@ -15,7 +15,7 @@ BuildRequires: perl(Class::Accessor)
 BuildRequires: perl(Parse::RecDescent)
 BuildRequires: perl(Regexp::Common)
 BuildRequires: perl(Email::Address)
-
+BuildRequires: perl(Email::MIME)
 BuildArch: noarch
 Buildroot: %{_tmppath}/%{name}-%{version}-%{release}
 
