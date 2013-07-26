@@ -1,15 +1,15 @@
 %define upstream_name	 Net-IMAP-Simple
-%define upstream_version 1.2023
+%define upstream_version 1.2200
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 1.2200
+Release:	1
 
 Summary:	Simple IMAP interface to Perl 5	
 License:	GPL
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Net/Net-IMAP-Simple-1.2200.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Class::Accessor)
@@ -165,4 +165,5 @@ yes | perl Makefile.PL INSTALLDIRS=vendor
 
 * Mon Dec 01 2003 Stew Benedict <sbenedict@mandrakesoft.com> 0.93-1mdk
 - first Mandrake release, optional feature for nocatauth
+
 
