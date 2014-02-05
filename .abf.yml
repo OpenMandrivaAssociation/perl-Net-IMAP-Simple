@@ -1,5 +1,6 @@
 removed_sources:
   Net-IMAP-Simple-1.2023.tar.gz: 9dabf28adeb2d19ab200fe0fe2c4e41bffd920a6
   Net-IMAP-Simple-1.2200.tar.gz: 7702ea538ab58d923b8e9edf313602e03c803b05
-sources:
   Net-IMAP-Simple-1.2203.tar.gz: 5864ed965d24f485422469ae8fea28c4fc596b27
+sources:
+  Net-IMAP-Simple-1.2204.tar.gz: 196dd32ddeab367e1297ad5c48fa29963d0a6d1e

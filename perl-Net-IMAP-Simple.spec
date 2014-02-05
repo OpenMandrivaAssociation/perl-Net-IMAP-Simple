@@ -1,5 +1,5 @@
 %define upstream_name	 Net-IMAP-Simple
-%define upstream_version 1.2203
+%define upstream_version 1.2204
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -165,6 +165,7 @@ yes | perl Makefile.PL INSTALLDIRS=vendor
 
 * Mon Dec 01 2003 Stew Benedict <sbenedict@mandrakesoft.com> 0.93-1mdk
 - first Mandrake release, optional feature for nocatauth
+
 
 
 
