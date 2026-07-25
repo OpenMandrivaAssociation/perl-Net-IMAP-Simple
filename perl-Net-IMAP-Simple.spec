@@ -1,16 +1,16 @@
 %define upstream_name	 Net-IMAP-Simple
-%define upstream_version 1.2205
+%define upstream_version 1.2212
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Simple IMAP interface to Perl 5	
 
 License:	GPL
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
+URL:		https://github.com/jettero/net--imap--simple
+Source0:	https://cpan.metacpan.org/authors/id/J/JE/JETTERO/Net-IMAP-Simple-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
